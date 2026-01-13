@@ -7,11 +7,11 @@ def show_menu():
 
 def load_tasks():
   try:
-    with open("tasks.txt", "r") as file:
+      with open("tasks.txt", "r") as file:
       return
 file.read().splitlines() 
-except:
-    return []
+  except:
+      return []
 
 def save_tasks(tasks):
   with open("tasks.txt", "w") as file:
@@ -46,7 +46,6 @@ def main():
           
         elif choice == "4":
           print("Goodbye!")
-          break
-          
+          break  
         else:
           print("Invalid choice!")
