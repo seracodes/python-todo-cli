@@ -9,8 +9,9 @@ def load_tasks():
   try:
     with open("tasks.txt", "r") as file:
       return
-file.read().splitlines() except:
-return []
+file.read().splitlines() 
+except:
+    return []
 
 def save_tasks(tasks):
   with open("tasks.txt", "w") as file:
